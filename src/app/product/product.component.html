@@ -1,0 +1,46 @@
+<app-category></app-category>
+
+<!-- Products array içi doluysa göster anlamına gelir. -->
+<!-- <h3 *ngIf="products; else noProduct">
+    {{title}}</h3> -->
+<!-- Else durumunda bu kısım çalışacaktır.-->
+<ng-template #noProduct>
+    <div class="alert alert-primary" role="alert">
+        Bu kategoride ürün yoktur.
+    </div>
+</ng-template>
+<!-- Two Way Binding Örneği-->
+<div class="mb-3">
+    <input type="text" placeholder="Ürün Ara" class="form-control" id="productName" aria-describedby="emailHelp" [(ngModel)]="filterText">
+    <div *ngIf="filterText" class="form-text">
+        <strong>{{filterText}}</strong> için arama sonucunuz ;</div>
+</div>
+
+<div class="row products-list">
+
+    <!-- ngFor angulardaki döngü yapısıdır. -->
+    <div *ngFor="let product of products | productFilter:filterText" class="card col-md-3">
+        <!-- Angularda property binding -> src yapısı için döngü aşağıdaki şekilde kullanılır:   -->
+        <img [src]="product.imageUrl" class="card-img-top" alt="{{product.name}}">
+        <div class="card-body">
+            <!-- Built-in pipe | örneği -->
+            <h5 class="card-title">{{product.name | uppercase}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <!-- currency : para birimi olarak tanımlanır. 
+                USD biçiminde yazdırıyoruz : 'symbol' veya :true ifadelerini kullanırsak para sembolünü yazdırır.
+                :false dersek ise metin olarak para birimini gösterir.
+              -->
+
+            <!--EVENT BINDING
+                işleme alacağımız methodu belirtiyoruz
+                component dosyasında çalışacağımız fonksiyonun işlevini kodluyoruz
+            -->
+            <a (click)="addToCart(product)" href="#" class="btn btn-primary">{{product.price | currency:'TRY ' : 'symbol' : "1.2-2"}} </a>
+        </div>
+    </div>
+</div>
+
+<!--
+    Angular frontend framework olduğu için direkt web servis üzerinden veritabanı bağlantısı yapılamaz.
+    Dinamik yapı ve veri kaydı bir api sayesinde sağlanır.
+-->
