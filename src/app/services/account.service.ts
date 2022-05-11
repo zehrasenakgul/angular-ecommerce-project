@@ -8,7 +8,7 @@ export class AccountService {
   loggedIn = false;
 
   login(user: User): boolean {
-    if (user.userName == "zehra" && user.password == "admin") {
+    if (user.userName == "admin" && user.password == "password") {
       this.loggedIn = true;
       localStorage.setItem("isLogged", user.userName);
       return true;
