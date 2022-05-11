@@ -1,0 +1,86 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 18000,
+      "categoryId": 1,
+      "description": "Lenovo Yoga",
+      "imageUrl": "https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125034104/125034104_0_MC/60698805.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Klavye",
+      "price": 449,
+      "categoryId": 2,
+      "description": "Logitech Klavye-Rose",
+      "imageUrl": "https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125200412/125200412_2_MC/14e5596f77564ccc97c24f75eb1a2859.png"
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "price": 18000,
+      "categoryId": 1,
+      "description": "Lenovo Yoga",
+      "imageUrl": "https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125034104/125034104_0_MC/60698805.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Klavye",
+      "price": 449,
+      "categoryId": 3,
+      "description": "Logitech Klavye-Rose",
+      "imageUrl": "https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125200412/125200412_2_MC/14e5596f77564ccc97c24f75eb1a2859.png"
+    },
+    {
+      "id": 5,
+      "name": "Laptop",
+      "price": 18000,
+      "categoryId": 4,
+      "description": "Lenovo Yoga",
+      "imageUrl": "https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125034104/125034104_0_MC/60698805.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Klavye",
+      "price": 449,
+      "categoryId": 5,
+      "description": "Logitech Klavye-Rose",
+      "imageUrl": "https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125200412/125200412_2_MC/14e5596f77564ccc97c24f75eb1a2859.png"
+    },
+    {
+      "name": "Telefon",
+      "description": "Samsung S20 Plus",
+      "imageUrl": "https://productimages.hepsiburada.net/s/35/1100/10486446129202.jpg/format:webp",
+      "price": "11640",
+      "categoryId": "1",
+      "id": 7
+    }
+  ],
+  "Categories": [
+    {
+      "id": 1,
+      "name": "Telefon"
+    },
+    {
+      "id": 2,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 3,
+      "name": "Televizyon"
+    },
+    {
+      "id": 4,
+      "name": "Beyaz Eşya"
+    },
+    {
+      "id": 5,
+      "name": "Kişisel Bakım"
+    },
+    {
+      "id": 6,
+      "name": "Oyun Konsolu"
+    }
+  ]
+}
